@@ -4,14 +4,102 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Css starter</title>
+    <title>E-commerce</title>
 
     <!-- stylesheet -->
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
+    <!-- Site header -->
+    <header class="site-header">
+        <div class="container site-header__container">
+            <div class="sitenav-logo--wrapper">
+                <a href="#" class="logo">
+                    <img class="logo__img" src="./img/logo.svg" alt="site-logo" width="138" height="20">
+                </a>
+                <nav class="sitenav">
+                  <ul class="sitenav__list">
+                    <li class="sitenav__item">
+                       <a class="sitenav__link" href="#" >Collections</a>
+                     </li>
+                     <li class="sitenav__item">
+                       <a class="sitenav__link" href="#" >Men</a>
+                     </li>
+                     <li class="sitenav__item">
+                       <a class="sitenav__link" href="#" >Women</a>
+                     </li>
+                     <li class="sitenav__item">
+                        <a class="sitenav__link" href="#" >About</a>
+                     </li>
+                     <li class="sitenav__item">
+                        <a class="sitenav__link" href="#" >Contact</a>
+                     </li>
+                  </ul>
+                </nav>
+            </div>
+            <div class="cart-profile--wrapper">
+                <button class="cart" type="button">
+                    <img class="cart__img" src="./img/cart-icon.svg" alt="cart-icon" width="21" height="20">
+                </button>
+                <a href="#" class="profile">
+                    <img class="profile__img" src="./img/profile.svg" alt="profile photo" width="50" height="50">
+                </a>
+            </div>
+        </div>
+    </header>
 
+    <main class="main-content">
+        <section class="hero">
+            <div class="container hero__container">
+                <div class="hero__img-showcase">
+                    <div class="img-showcase--big">
+                        <img class="img-showcase--big__img" src="./img/main.jpg" alt="sneakers " width="445" height="445" srcset="./img/main.jpg 1x, ./img/main@2x.jpg 2x">
+                    </div>
+                    <button class="img-showcase__btn">
+                        <img class="img-showcase--btn__img" src="./img/main.jpg" alt="sneakers" width="88" height="88" srcset="./img/main.jpg 1x, ./img/main@2x.jpg 2x">
+                    </button>
+
+                    <button class="img-showcase__btn">
+                        <img class="img-showcase--btn__img" src="./img/sneakers-tree.png" alt="sneakers with tree" width="88" height="88" srcset="./img/sneakers-tree.png 1x, ./img/sneakers-tree@2x.png 2x">
+                    </button>
+
+                    <button class="img-showcase__btn">
+                        <img class="img-showcase--btn__img" src="./img/sneaker-stone.png" alt="sneakers" width="88" height="88" srcset="./img/sneaker-stone.png 1x, ./img/sneaker-stone@2x.png 2x">
+                    </button>
+
+                    <button class="img-showcase__btn">
+                        <img class="img-showcase--btn__img" src="./img/sneaker-2stones.png" alt="sneakers" width="88" height="88" srcset="./img/sneaker-2stones.png 1x, ./img/sneaker-2stones@2x.png 2x">
+                    </button>
+                </div>
+
+                <div class="hero__content">
+                    <h1 class="hero__content-title">Fall Limited Edition Sneakers</h1>
+                    <p class="hero__content-logo">Sneaker Company</p>
+                    <p class="hero__content-info">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+                    <div class="hero__content-price--wrapper">
+                        <div class="hero__content-price--box">
+                            <p class="hero__content-price--new">$125.00</p>
+                            <p class="hero__content-price--old">$250.00</p>
+                        </div>
+                        <p class="hero__content-sale">50%</p>
+                    </div>
+
+                    <div class="hero__btn--wrapper">
+                        <div class="hero__btn-number--wrapper">
+                            <button class="minus"></button>
+                            <button class="plus"></button>
+                        </div>
+
+                        <button class="hero__btn-cart">
+                            <span class="hero__btn-cart--text">Add to cart</span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="./js/main.js"></script>
 </body>
 </html>
