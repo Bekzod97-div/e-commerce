@@ -161,6 +161,14 @@ img {
     border: none;
     cursor: pointer;
     margin-right: 46px;
+    color: var(--text-color);
+}
+.cart:hover {
+    color: var(--text-dark);
+}
+
+.cart:active {
+    opacity: 0.6;
 }
 
 .cart__img {
@@ -168,6 +176,7 @@ img {
     width: 21px;
     height: 20px;
     object-fit: contain;
+    color: var(--text-color);
 }
 
 /* Profile */
@@ -195,6 +204,52 @@ img {
 }
 
 /* Hero */
+.hero {
+    position: relative;
+    z-index: 1;
+}
+
+/* Cart table */
+.cart-table {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-89px, -110px);
+    width: 100%;
+    max-width: 360px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 20px 50px -20px rgba(29, 32, 38, 0.503143);
+    z-index: 99;
+}
+
+.cart-table__active {
+    display: block;
+}
+
+.cart-table__header {
+    padding-top: 24px;
+    padding-bottom: 27px;
+    padding-left: 24px;
+    border-bottom: 1px solid #E4E9F2;
+}
+.cart-table__title {
+    font-weight: 700;
+    line-height: 20px;
+    color: var(--text-dark);
+}
+
+.cart-table__content {
+    padding-top: 80px;
+    padding-bottom: 90px;
+}
+.cart-table__content-text {
+    text-align: center;
+    font-weight: 700;
+
+}
+
 .hero__container {
     display: flex;
     align-items: center;
