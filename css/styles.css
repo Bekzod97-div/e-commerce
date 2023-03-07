@@ -74,6 +74,7 @@ img {
     display: flex;
     align-items: center;
     border-bottom: 1px solid #E4E9F2;
+    margin-bottom: 90px;
 }
 
 /* Sitenav logo */
@@ -190,4 +191,128 @@ img {
 /* Main content */
 .main-content {
     flex-grow: 1;
+    padding-bottom: 132px;
+}
+
+/* Hero */
+.hero__container {
+    display: flex;
+    align-items: center;
+    padding-left: 47px;
+    padding-right: 47px;
+}
+
+.hero__img-showcase {
+    width: 100%;
+    max-width: 445px;
+    margin-right: auto;
+}
+
+
+.img-showcase--big__img {
+    display: block;
+    width: 445px;
+    height: 445px;
+    margin-bottom: 32px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* Img showcase btn wrapper */
+.img-showcase__btn--wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.img-showcase__btn {
+    width: 84px;
+    height: 84px;
+    display: inline-block;
+    flex-wrap: wrap;
+    border: 2px solid transparent;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.img-showcase__btn:not(:last-child) {
+    margin-right: 30px;
+}
+
+.img-showcase__btn:hover {
+    opacity: 0.5;
+}
+
+.img-showcase__btn-active {
+    border-color: var(--orange-color);
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.img-showcase--btn__img {
+    display: block;
+    width: 84px;
+    height: 84px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Hero content */
+.hero__content {
+    width: 100%;
+    max-width: 445px;
+}
+.hero__content-logo {
+    display: block;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--orange-color);
+    margin-bottom: 24px;
+}
+.hero__content-title {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 48px;
+    color: var(--text-dark);
+    margin-bottom: 32px;
+}
+
+/* Hero content price */
+.hero__content-price--wrapper {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+.hero__content-price--box {
+    margin-right: 23px;
+}
+
+.hero__content-price--new {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+    color: var(--text-dark);
+    margin-bottom: 3px;
+}
+
+.hero__content-price--old {
+    font-weight: 700;
+    color: #B6BCC8;
+    text-decoration: line-through;
+}
+
+/* Sale */
+.hero__content-sale {
+    font-weight: 700;
+    line-height: 20px;
+    color: var(--orange-color);
+    padding-top: 7px;
+    padding-left: 8px;
+    padding-right: 11px;
+    padding-bottom: 0;
+    background-color: #FFEEE2;
 }
