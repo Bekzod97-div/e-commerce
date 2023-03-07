@@ -57,7 +57,7 @@
                 </header>
 
                 <div class="cart-table__content">
-                    <p class="cart-table__content-text">Your cart is empty.</p>
+                    <div class="price">$125.00</div>
                 </div>
             </div>
 
@@ -94,19 +94,24 @@
                         <p class="hero__content-sale">50%</p>
                     </div>
 
-                    <div class="hero__btn--wrapper">
-                        <div class="hero__btn-number--wrapper">
-                            <button class="minus"></button>
-                            <button class="plus"></button>
-                        </div>
+                    <div class="cart-btns--wrapper">
+                            <div class="quantity cards-item">
+                                <button class="quantity__btn minus-btn" type="button" name="button">
+                                    <img class="minus-btn__img" src="./img/minus.svg" alt="minus sign" width="12" height="5">
+                                </button>
+                                <input class="cart-item__input" type="text" name="name" value="0">
+                                <button class="quantity__btn plus-btn" type="button" name="button">
+                                    <img class="plus-btn__img" src="./img/plus.svg" alt="plus sign" width="12" height="12">
+                                </button>
+                            </div>
 
-                        <button class="hero__btn-cart">
-                            <span class="hero__btn-cart--text">Add to cart</span>
-                        </button>
+                            <button class="hero__btn-cart">
+                                <span class="hero__btn-cart--text">Add to cart</span>
+                            </button>
+                    </div>
                     </div>
 
                 </div>
-            </div>
         </section>
     </main>
     <script src="./js/main.js"></script>
