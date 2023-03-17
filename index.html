@@ -94,27 +94,27 @@
                 <div class="hero__container">
                     <div class="hero__img-showcase">
                         <div class="img-showcase--big">
-                            <img class="img-showcase--big__img" src="./img/main.jpg" alt="sneakers " width="445" height="445" srcset="./img/main.jpg 1x, ./img/main@2x.jpg 2x">
+                          <img class="img-showcase--big__img" src="./img/main.jpg" alt="sneakers" width="445" height="445">
                         </div>
                         <div class="img-showcase__btn--wrapper">
-                            <button class="img-showcase__btn img-showcase__btn-active ">
-                                <img class="img-showcase--btn__img" src="./img/main.jpg" alt="sneakers in bottom" width="84" height="84" srcset="./img/main.jpg 1x, ./img/main@2x.jpg 2x">
-                            </button>
-                            <button class="img-showcase__btn">
-                                <img class="img-showcase--btn__img" src="./img/sneakers-tree.png" alt="sneakers with tree" width="88" height="88" srcset="./img/sneakers-tree.png 1x, ./img/sneakers-tree@2x.png 2x">
-                            </button>
-                            <button class="img-showcase__btn">
-                                <img class="img-showcase--btn__img" src="./img/sneaker-stone.png" alt="sneakers" width="88" height="88" srcset="./img/sneaker-stone.png 1x, ./img/sneaker-stone@2x.png 2x">
-                            </button>
-                            <button class="img-showcase__btn">
-                                <img class="img-showcase--btn__img" src="./img/sneaker-2stones.png" alt="sneakers" width="88" height="88" srcset="./img/sneaker-2stones.png 1x, ./img/sneaker-2stones@2x.png 2x">
-                            </button>
-
-                            <button class="img-showcase__btn">
-                                <img class="img-showcase--btn__img" src="./img/sneaker-stone.png" alt="sneakers" width="88" height="88" srcset="./img/sneaker-stone.png 1x, ./img/sneaker-stone@2x.png 2x">
-                            </button>
+                          <button class="img-showcase__btn img-showcase__btn-active" data-image="./img/main.jpg">
+                            <img class="img-showcase--btn__img" src="./img/main.jpg" alt="sneakers in bottom" width="84" height="84">
+                          </button>
+                          <button class="img-showcase__btn" data-image="./img/sneakers-tree.png">
+                            <img class="img-showcase--btn__img" src="./img/sneakers-tree.png" alt="sneakers with tree" width="352" height="352">
+                          </button>
+                          <button class="img-showcase__btn" data-image="./img/sneaker-stone.png">
+                            <img class="img-showcase--btn__img" src="./img/sneaker-stone.png" alt="sneakers" width="352" height="352">
+                          </button>
+                          <button class="img-showcase__btn" data-image="./img/sneaker-2stones.png">
+                            <img class="img-showcase--btn__img" src="./img/sneaker-2stones.png" alt="sneakers" width="352" height="352">
+                          </button>
                         </div>
-                    </div>
+                      </div>
+
+
+
+
                     <div class="hero__content">
                         <span class="hero__content-logo">Sneaker Company</span>
                         <h1 class="hero__content-title">Fall Limited Edition Sneakers</h1>
@@ -146,6 +146,42 @@
                 </div>
         </section>
     </main>
+
+    <section class="modal">
+        <div class="hero__img-showcase modal__img-showcase">
+            <div class="img-showcase--big">
+              <img class="img-showcase--big__img modal__img-showcase--big__img" src="./img/main.jpg" alt="sneakers" width="445" height="445">
+            </div>
+            <div class="img-showcase__btn--wrapper">
+              <button class="img-showcase__btn img-showcase__btn-active" data-image="./img/main.jpg">
+                <img class="img-showcase--btn__img" src="./img/main.jpg" alt="sneakers in bottom" width="84" height="84">
+              </button>
+              <button class="img-showcase__btn" data-image="./img/sneakers-tree.png">
+                <img class="img-showcase--btn__img" src="./img/sneakers-tree.png" alt="sneakers with tree" width="352" height="352">
+              </button>
+              <button class="img-showcase__btn" data-image="./img/sneaker-stone.png">
+                <img class="img-showcase--btn__img" src="./img/sneaker-stone.png" alt="sneakers" width="352" height="352">
+              </button>
+              <button class="img-showcase__btn" data-image="./img/sneaker-2stones.png">
+                <img class="img-showcase--btn__img" src="./img/sneaker-2stones.png" alt="sneakers" width="352" height="352">
+              </button>
+            </div>
+
+            <!-- Buttons -->
+            <button class="exit-btn" type="button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"><path fill="currentColor" fill-rule="evenodd" d="M20 2.857 17.143 0 10 7.143 2.857 0 0 2.857 7.143 10 0 17.143 2.857 20 10 12.857 17.143 20 20 17.143 12.857 10 20 2.857Z" clip-rule="evenodd"/></svg>
+            </button>
+
+            <button class="left-slider slider" type="button">
+                <svg class="slider__img" xmlns="http://www.w3.org/2000/svg" width="13" height="20" fill="none"><path stroke="currentColor" stroke-width="3" d="m11 2-8 8 8 8"/></svg>
+            </button>
+
+            <button class="right-slider slider" type="button">
+                <svg class="slider__img" xmlns="http://www.w3.org/2000/svg" width="13" height="20" fill="none"><path stroke="currentColor" stroke-width="3" d="m2 2 8 8-8 8"/></svg>
+            </button>
+          </div>
+
+    </section>
 
     <script src="./js/main.js"></script>
 </body>
