@@ -67,3 +67,18 @@ minusBtn.addEventListener('click', function() {
     }
 
 });
+
+// Image showcase functionality
+const btns = document.querySelectorAll('.img-showcase__btn');
+const mainImg = document.querySelector('.img-showcase--big__img');
+
+btns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    // remove the active class from all buttons
+    btns.forEach(btn => btn.classList.remove('img-showcase__btn-active'));
+    // add the active class to the clicked button
+    btn.classList.add('img-showcase__btn-active');
+    // set the main image source to the data-image attribute of the clicked button
+    mainImg.setAttribute('src', btn.getAttribute('data-image'));
+  });
+});
