@@ -82,3 +82,23 @@ btns.forEach(btn => {
     mainImg.setAttribute('src', btn.getAttribute('data-image'));
   });
 });
+
+// Lightbox Modal
+const elExitButton = document.querySelector('.exit-btn');
+const elModal = document.querySelector('.modal');
+const elModalOpenButton = document.querySelector('.modal-open__btn');
+
+if (elExitButton) {
+    elExitButton.addEventListener('click', () => {
+        //Remove js-modal class
+        elModal.classList.remove('js-modal');
+    } );
+}
+
+// Modal opener
+if (elModalOpenButton) {
+    elModalOpenButton.addEventListener('click', () => {
+        //Add js-modal class
+        elModal.classList.add('js-modal');
+    } );
+}
