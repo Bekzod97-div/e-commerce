@@ -102,3 +102,31 @@ if (elModalOpenButton) {
         elModal.classList.add('js-modal');
     } );
 }
+
+// Modal image slider
+const imgWrapper = document.querySelector('.modal__img-showcase--big');
+const imgButtons = document.querySelectorAll('.img-showcase__btn');
+let currentImg = 0;
+
+function showImg(index) {
+  imgWrapper.innerHTML = `<img class="img-showcase--big__img modal__img-showcase--big__img" src="${imgButtons[index].getAttribute('data-image')}" alt="sneakers" width="550" height="550">`;
+}
+
+function next() {
+  currentImg++;
+  if (currentImg >= imgButtons.length) {
+    currentImg = 0;
+  }
+  showImg(currentImg);
+}
+
+function previous() {
+  currentImg--;
+  if (currentImg < 0) {
+    currentImg = imgButtons.length - 1;
+  }
+  showImg(currentImg);
+}
+
+document.querySelector('.right-slider').addEventListener('click', next);
+document.querySelector('.left-slider').addEventListener('click', previous);
